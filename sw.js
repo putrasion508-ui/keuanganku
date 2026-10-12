@@ -3,7 +3,7 @@
    all-or-nothing — satu ikon 404 membuat SELURUH instalasi gagal
    dan mode offline mati total tanpa pemberitahuan.
    Sekarang tiap file di-cache sendiri-sendiri. */
-var CACHE = 'keuangan-v36';
+var CACHE = 'keuangan-v37';
 var ASSETS = [
   './',
   './index.html',
@@ -12,6 +12,10 @@ var ASSETS = [
   './icon-512.png',
   './icon-180.png'
 ];
+/* CATATAN: file OCR di ./ocr/ (±5 MB) SENGAJA tidak ada di daftar ini.
+   Mengunduh 5 MB saat install membuat app terasa rusak di jaringan
+   pelan. File itu di-cache otomatis oleh handler fetch di bawah saat
+   pertama kali OCR dipakai, lalu tersedia offline. */
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
