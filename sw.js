@@ -3,7 +3,7 @@
    all-or-nothing — satu ikon 404 membuat SELURUH instalasi gagal
    dan mode offline mati total tanpa pemberitahuan.
    Sekarang tiap file di-cache sendiri-sendiri. */
-var CACHE = 'keuangan-v3111';
+var CACHE = 'keuangan-v312';
 var ASSETS = [
   './',
   './index.html',
